@@ -60,10 +60,12 @@ icons {
 }
 
 name {
+  font-family: 'Open Sans', sans-serif;
   font-size: 80%;
   font-weight: normal;
   text-align: center;
   margin-top: 1rem;
+  filter: brightness(100%);
 }
 
 @font-face {
@@ -86,3 +88,31 @@ name {
 		font-weight: normal;
 		font-style: italic;
 }
+
+:root {
+  --background-color: #fff; /* Light mode background color */
+  --text-color: #000; /* Light mode text color */
+}
+
+/* Styles for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #181A1B;
+    --text-color: #fff;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Apply dark mode styles to other elements */
+}
+
+/* Default styles for light mode */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Apply light mode styles to other elements */
