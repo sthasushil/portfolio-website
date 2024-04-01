@@ -38,6 +38,21 @@ footer {
 img {
   width: 25px; /* Adjust width as needed */
   height: 25px; /* Adjust height as needed */
+  filter: brightness(0) contrast(200);
+  image-rendering: optimizeSpeed; /* Force rasterization */
+  transform: scale(1.2) scale(1/1.2); /* Render at 2x, scale down to 0.5x */
+  object-fit: cover;
+}
+
+@keyframes grow {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+img:hover {
+	animation: grow 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+	filter: none;
 }
 
 icons {
