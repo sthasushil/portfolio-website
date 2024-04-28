@@ -116,3 +116,7 @@ body {
 }
 
 /* Apply light mode styles to other elements */
+
+a {
+	text-decoration: none;
+}
