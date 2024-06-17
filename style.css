@@ -28,6 +28,15 @@ em {
   font-size: 120%
 }
 
+.advert {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: -8.5vw;
+  line-height: 1;
+  font-size: 50%;
+}
+
 footer {
   text-align: center;
   justify-content: center;
