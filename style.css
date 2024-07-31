@@ -37,6 +37,10 @@ em {
   font-size: 50%;
 }
 
+.signal:link {color: #90F2FB;} .signal:hover {filter: brightness(75%);} .signal:visited {color: #90F2FB;}
+
+.email:link {color: #90F2FB;} .email:hover {filter: brightness(75%);} .email:visited {color: #90F2FB;}
+
 footer {
   text-align: center;
   justify-content: center;
